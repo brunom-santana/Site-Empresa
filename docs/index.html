@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>MeuSite</title>
+</head>
+<body>
+    <header class="header text-center">
+      <h1>Meu Site</h1>
+      <p>Soluções Tecnológicas</p>
+    </header>
+  
+    <nav class="navbar">
+      <a href="#about">Sobre</a>
+      <a href="#portfolio">Portfólio</a>
+      <a href="#contact">Contato</a>
+    </nav>
+  
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title">Sobre nós</h2>
+        <p class="section-content">Somos uma empresa especializada em nada para ajudar empresas de todos os tamanhos. Nossa equipe (uma pessoa só) de profissionais altamente qualificados está pronta para atender às necessidades do seu negócio.</p>
+      </div>
+    </section>
+  
+    <section id="portfolio" class="section">
+      <div class="container">
+        <h2 class="section-title">Portfólio</h2>
+        <p class="section-content">Confira alguns dos trabalhos desenvolvidos por mim:</p>
+        <div class="row">
+          <div class="col-md-4">
+            <h3>Projeto 1</h3>
+            <p><a href="https://brunom-santana.github.io/Curriculo/" target="_blank" class="text-dark">Curriculo sobre mim</a></p>
+          </div>
+          <div class="col-md-4">
+            <h3>Projeto 2</h3>
+            <p><a href="https://brunom-santana.github.io/Apostila/" target="_blank" class="text-dark">Apostila criada por mim</a></p>
+          </div>
+          <div class="col-md-4">
+            <h3>Projeto 3</h3>
+            <p><a href="https://brunom-santana.github.io/Jogo/" target="_blank" class="text-dark">Jogo feito por mim</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <section id="contact" class="section">
+      <div class="container">
+        <h2 class="section-title">Contato</h2>
+        <p class="section-content">Entre em contato conosco para solicitar um orçamento ou tirar suas dúvidas:</p>
+        <form>
+            <div class="form-group">
+              <label for="radio1">Sexo:</label>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="radio1" id="radio1" value="opcao1">
+                <label class="form-check-label" for="radio1">
+                  Masculino
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="radio1" id="radio2" value="opcao2">
+                <label class="form-check-label" for="radio1">
+                  Feminino
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="radio1" id="radio3" value="opcao3">
+                <label class="form-check-label" for="radio1">
+                  Outro
+                </label>
+              </div>
+            </div>
+      
+            <div class="form-group">
+              <label for="checkboxes">Qual sua cor favorita:</label>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="checkbox1" id="checkbox1" value="opcao1" onchange="mudarCor()">
+                <label class="form-check-label" for="checkbox1">
+                  Vermelho
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="checkbox2" id="checkbox2" value="opcao2" onchange="mudarCor()">
+                <label class="form-check-label" for="checkbox2">
+                  Azul
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="checkbox3" id="checkbox3" value="opcao3" onchange="mudarCor()">
+                <label class="form-check-label" for="checkbox3">
+                  Amarelo
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="checkbox4" id="checkbox4" value="opcao4" onchange="mudarCor()">
+                <label class="form-check-label" for="checkbox4">
+                  Verde
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="checkbox5" id="checkbox5" value="opcao5" onchange="mudarCor()">
+                <label class="form-check-label" for="checkbox5">
+                  Branco
+                </label>
+              </div>
+            </div>
+      
+            <div class="form-group">
+              <label for="text1">Nome:</label>
+              <input type="text" class="form-control" id="text1" name="text1">
+            </div>
+      
+            <div class="form-group">
+              <label for="text2">Sobrenome:</label>
+              <input type="text" class="form-control" id="text2" name="text2">
+            </div>
+      
+            <div class="form-group">
+              <label for="number1">Idade:</label>
+              <input type="number" class="form-control" id="number1" name="number1" max="100">
+            </div>
+      
+            <div class="form-group">
+              <label for="number2">CPF:</label>
+              <input type="number" class="form-control" id="number2" name="number2">
+            </div>
+      
+            <button type="submit" class="btn btn-primary">Enviar</button>
+          </form>
+      </div>
+    </section>
+  
+<script src="meu.js"></script>
+  </body>
+</html>
